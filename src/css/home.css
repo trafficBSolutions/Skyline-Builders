@@ -1,0 +1,890 @@
+@font-face {
+  font-family: "Britannic Bold";
+  src: url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.eot");
+  src: url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/8be4a2f403c2dc27187d892cca388e24.svg#Britannic Bold")format("svg");
+}
+@font-face {
+  font-family: "GillSans-CondensedRegular";
+  src: url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.eot");
+  src: url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/ebd6a939b8d0d86e56b7efc5229a29de.svg#GillSans-CondensedRegular")format("svg");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.skyline-main {
+  padding: 300px 0 40px;
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+/*
+.skyline-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+  */
+.skyline-statement {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  text-align: left;
+  padding: 1rem 0;
+}
+.skyline-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.skyline-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.94) 21%, rgba(35, 35, 35, 0.9) 37%, rgba(124, 124, 124, 0) 100%);
+  z-index: 1;
+}
+.skyline-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  text-align: center;
+  color: #fff;
+}
+.skyline-main-h1 {
+  font-size: 4rem;
+  font-family: "Britannic Bold";
+  text-align: center;
+  color: #fff;
+}
+.gallery-navigation-arrow-left,
+.gallery-navigation-arrow-right {
+  background-color: #e62222;
+  border: none;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 20%;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+.gallery-navigation-arrow-left:hover,
+.gallery-navigation-arrow-right:hover {
+  background-color: #fc4848;
+}
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and fill the area */
+}
+.gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 1fr); /* Ensures equal-sized columns */
+  gap: 10px; /* Adjust spacing between images */
+  max-width: 90%; /* Prevent overflow */
+  margin: 0 auto; /* Centers the gallery */
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.sky-photo-gallery {
+  background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: auto;
+}
+.container-photos {
+  background-color: #faf0ca;
+  width: auto;
+  padding: 1rem 0;
+  height: auto;
+  flex: 1;
+}
+.photo-note {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+}
+.home-services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  background-color: rgb(201, 23, 23);
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8rem;
+  margin-top: 20px;
+}
+.service-booking {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  text-decoration: none;
+  background-color: rgb(201, 23, 23);
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.8rem;
+}
+.home-services:hover,
+.service-booking:hover {
+  background-color: rgb(150, 20, 20);
+}
+.services {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.service-title, .estimate-h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.service-description {
+  padding: 30px;
+}
+.service-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h2 {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.service-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.service-card p {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555;
+  margin-top: 10px;
+}
+.estimate-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #aa8989;
+}
+
+.service-process {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.process-step {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.process-step::after {
+  content: "→";
+  font-size: 1.4rem;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+}
+
+.process-step:last-child::after {
+  content: "";
+  display: none;
+}
+.why-choose-us {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: rgb(226, 221, 221); /* Light grey for subtle contrast */
+  border-radius: 10px; /* Slight rounded edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.why-choose-us h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.why-choose-us ul {
+  list-style: none;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.why-choose-us li {
+  font-size: 2rem;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.choose-logo {
+  max-width: 300px;
+}
+.why-choose-us li::before {
+  content: "✔"; /* Green checkmark */
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.skyline-builders-description {
+  font-size: 2.2rem;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 20px;
+  font-weight: 500;
+}
+.process-step h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) and (orientation: landscape) {
+  .skyline-main-h1 {
+    font-size: 2.7rem;
+  }
+  .skyline-main {
+    padding: 7rem 3rem;
+    height: 25vh;
+  }
+
+  .skyline-statement {
+    font-size: 1.3rem;
+  }
+  .home-services {
+    font-size: 1.3rem;
+  }
+.photo-note {
+  font-size: 2.3rem;
+}
+.why-choose-us h1 {
+  font-size: 1.8rem;
+}
+.choose-logo {
+  max-width: 170px;
+}
+.skyline-builders-description {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1.5rem;
+}
+.why-choose-us li {
+  font-size: 1rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 2rem;
+}
+.service-card h2 {
+  font-size: 1.4rem;
+}
+.service-card p {
+  font-size: 1.2rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.services {
+  padding: 20px 10px;
+}
+.process-step {
+  position: relative;
+  font-size: 1.1rem;
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+.service-booking {
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+.services-grid {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.service-process {
+  flex-wrap: nowrap;
+}
+}
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .skyline-main-h1 {
+    font-size: 2rem;
+  }
+  .skyline-main {
+    padding: 7rem 3rem;
+    height: 25vh;
+  }
+
+  .skyline-statement {
+    font-size: 1rem;
+  }
+  .home-services {
+    font-size: 1.2rem;
+  }
+.photo-note {
+  font-size: 2.3rem;
+}
+.why-choose-us h1 {
+  font-size: 2rem;
+}
+.choose-logo {
+  max-width: 170px;
+}
+.skyline-builders-description {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1.5rem;
+}
+.why-choose-us li {
+  font-size: 1rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 2rem;
+}
+.service-card h2 {
+  font-size: 1.1rem;
+}
+.service-card p {
+  font-size: 0.9rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.services {
+  padding: 20px 10px;
+}
+.process-step {
+  position: relative;
+  font-size: 1.1rem;
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+.service-booking {
+  font-size: 1.7rem;
+  padding: 5px 10px;
+}
+.services-grid {
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.service-process {
+  flex-wrap: nowrap;
+}
+.service-card {
+  padding: 10px 5px;
+}
+.service-card img {
+  height: 100px;
+}
+}
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .skyline-main-h1 {
+    font-size: 2rem;
+  }
+  .skyline-main {
+    padding: 7rem 3rem;
+    height: 25vh;
+  }
+
+  .skyline-statement {
+    font-size: 1rem;
+  }
+  .home-services {
+    font-size: 1.2rem;
+  }
+.photo-note {
+  font-size: 2.3rem;
+}
+.why-choose-us h1 {
+  font-size: 2rem;
+}
+.choose-logo {
+  max-width: 150px;
+}
+.skyline-builders-description {
+  font-size: 1.2rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1.5rem;
+}
+.why-choose-us li {
+  font-size: 1.2rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 2rem;
+}
+.service-card h2 {
+  font-size: 1.1rem;
+}
+.service-card p {
+  font-size: 0.9rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.services {
+  padding: 20px 10px;
+}
+.process-step {
+  position: relative;
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+.service-booking {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.services-grid {
+  max-width: 1000px;
+  flex-wrap: nowrap;
+}
+.service-process {
+  flex-wrap: nowrap;
+}
+.service-card {
+  padding: 10px 5px;
+}
+.service-card img {
+  height: 100px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+  .skyline-main-h1 {
+    font-size: 1.8rem;
+  }
+  .skyline-main {
+    padding: 7rem 3rem;
+  }
+
+  .skyline-statement {
+    font-size: 0.9rem;
+  }
+  .home-services {
+    font-size: 1rem;
+  }
+.photo-note {
+  font-size: 1.5rem;
+}
+.gallery-item img {
+  height: 40vh;
+}
+.why-choose-us h1 {
+  font-size: 1.5rem;
+}
+.choose-logo {
+  max-width: 100px;
+}
+.skyline-builders-description {
+  font-size: 0.7rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1.5rem;
+}
+.why-choose-us li {
+  font-size: 0.8rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 1.5rem;
+}
+.service-card h2 {
+  font-size: 1rem;
+}
+.service-card p {
+  font-size: 0.7rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.service-description {
+  padding: 0;
+}
+.services {
+  padding: 20px 10px;
+}
+.process-step {
+  position: relative;
+  font-size: 0.5rem;
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+
+
+
+.service-booking {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+}
+.services-grid {
+  max-width: 1000px;
+  flex-wrap: nowrap;
+}
+.service-card {
+  padding: 10px 5px;
+}
+.service-card img {
+  height: 100px;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+  .skyline-main-h1 {
+    font-size: 1.8rem;
+  }
+  .skyline-main {
+    height: 30vh;
+    padding: 20rem 0 20px;
+  }
+  .skyline-video {
+    height: 120%;
+  }
+  .skyline-description {
+    align-items: center;
+  }
+  .skyline-statement {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .home-services {
+    font-size: 1.2rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 5px;
+}
+.photo-note {
+  font-size: 1.5rem;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.why-choose-us h1 {
+  font-size: 1.5rem;
+}
+.choose-logo {
+  max-width: 100px;
+}
+.skyline-builders-description {
+  font-size: 0.7rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1.5rem;
+}
+.why-choose-us li {
+  font-size: 0.8rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 1.5rem;
+}
+.service-card h2 {
+  font-size: 1.2rem;
+}
+.service-card p {
+  font-size: 1rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.service-description {
+  padding: 5px 2rem 1rem;
+}
+.process-step {
+  position: relative;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+
+.process-step::after {
+  content: "↓";
+  left: 50%;
+  top: 120%;
+  bottom: -15px; /* Positions the arrow below the box */
+  transform: translateX(-50%);
+
+}
+
+.service-booking {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.services-grid, .service-process {
+  flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 320px) and (orientation:landscape) {
+  .skyline-main-h1 {
+    font-size: 2rem;
+  }
+  .skyline-main {
+    height: 30vh;
+    padding: 20rem 0 20px;
+  }
+  .skyline-description {
+    align-items: center;
+  }
+  .skyline-statement {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .home-services {
+    font-size: 1rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 5px;
+}
+.photo-note {
+  font-size: 1.5rem;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.why-choose-us h1 {
+  font-size: 1.5rem;
+}
+.choose-logo {
+  max-width: 100px;
+}
+.skyline-builders-description {
+  font-size: 0.7rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1rem;
+}
+.why-choose-us li {
+  font-size: 0.6rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 1.5rem;
+}
+.service-card h2 {
+  font-size: 1rem;
+}
+.service-card p {
+  font-size: 0.8rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.service-description {
+  padding: 5px 2rem 1rem;
+}
+.process-step {
+  position: relative;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+
+.process-step::after {
+  content: "↓";
+  left: 50%;
+  top: 120%;
+  bottom: -15px; /* Positions the arrow below the box */
+  transform: translateX(-50%);
+
+}
+
+.service-booking {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.services-grid, .service-process {
+  flex-wrap: wrap;
+}
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .skyline-main-h1 {
+    font-size: 2rem;
+  }
+  .skyline-main {
+    height: 30vh;
+    padding: 20rem 0 20px;
+  }
+  .skyline-description {
+    align-items: center;
+  }
+  .skyline-statement {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .home-services {
+    font-size: 1rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 5px;
+}
+.photo-note {
+  font-size: 1.5rem;
+}
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+.why-choose-us h1 {
+  font-size: 1.5rem;
+}
+.choose-logo {
+  max-width: 100px;
+}
+.skyline-builders-description {
+  font-size: 0.7rem;
+  margin: 0 auto;
+}
+.why-choose-us {
+  padding: 1rem;
+}
+.why-choose-us li {
+  font-size: 0.6rem;
+  padding: 7px 0;
+}
+.service-title, .estimate-h1 {
+  font-size: 1.5rem;
+}
+.service-card h2 {
+  font-size: 1rem;
+}
+.service-card p {
+  font-size: 0.8rem;
+}
+.estimate-section {
+  padding: 1rem 0;
+}
+.service-description {
+  padding: 5px 2rem 1rem;
+}
+.process-step {
+  position: relative;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px; /* Add space for arrows */
+}
+
+.process-step::after {
+  content: "↓";
+  left: 50%;
+  top: 120%;
+  bottom: -15px; /* Positions the arrow below the box */
+  transform: translateX(-50%);
+
+}
+
+.service-booking {
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
+.services-grid, .service-process {
+  flex-wrap: wrap;
+}
+}

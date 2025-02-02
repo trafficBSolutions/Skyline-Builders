@@ -1,0 +1,588 @@
+.sky-header {
+  background-color: rgb(207, 37, 37);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  padding: 0 20px;
+  position: relative;
+}
+.main-sky-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex: 1;
+  padding: 0;
+}
+.header-skyline-logo {
+  max-width: 200px;
+  height: auto;
+}
+.header-skyline-logo:hover {
+  background-color: #949494;
+}
+.skyline-logo-img {
+  max-width: 120px;
+}
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+}
+.main-nav-list li:hover .sub-nav-list {
+  display: flex;
+  text-decoration: none;
+}
+.main-nav-link:hover {
+  text-decoration:solid;
+  color: #000;
+}
+.sub-nav-list {
+  display: none;
+  position: absolute;
+  left: 50%; /* Move the list to the center horizontally */
+  transform: translateX(-50%); /* Adjust back by 50% of its width */
+  background-color: #d1d1d1;
+  padding: 1rem;
+  line-height: 1.8rem;
+  text-align: center;
+  flex-direction: column;
+  box-shadow: none;
+  border-radius: 6px;
+  z-index: 1000;
+  list-style: none;
+  width: max-content; /* Ensures it wraps around content */
+}
+.main-nav-list li {
+  position: relative; /* Needed for absolute positioning of sub-nav */
+}
+
+.sub-nav-list a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: "GillSans-CondensedRegular";
+  transition: background-color .3s;
+}
+.sky-mobile-nav-icon {
+  display: none;
+}
+  .main-nav-link:active {
+    color: #ffcb9e;
+  }
+  .sub-nav-list a:hover {
+    background-color: #e4e4e4; /* Darken on hover */
+}
+.main-nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 500;
+  transition: color .3s;
+  font-family: "GillSans-CondensedRegular";
+  list-style: none;
+}
+.main-nav-link-view {
+  text-decoration: none;
+  color: #ffa1a1;
+  font-size: 2.3rem;
+  font-weight: 500;
+  transition: color .3s;
+  font-family: "GillSans-CondensedRegular";
+  list-style: none;
+}
+.contact-button {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-color: #000;
+    border-style: solid;
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 6px;
+    transition: background-color .3s;
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+.contact-button:hover{
+  cursor: pointer;
+  background-color: #949494;
+}
+
+.social-icons {
+  display: flex;
+    padding-top: 20px;
+    text-align: center;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.social-icon {
+  margin-right: 1.2rem;
+}
+.facebook-img, .tiktok-img, .insta-img {
+  width: 2.5rem;
+  height: auto;
+}
+.sub-nav-list li {
+  margin: .5rem 0;
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px) and (orientation: landscape) {
+  .skyline-logo-img {
+    max-width: 100px;
+  }
+  .header-skyline-logo {
+    max-width: 8rem;
+  }
+  .main-nav-list {
+    gap: 0rem;
+    text-align: center;
+    white-space: nowrap; /* Prevents wrapping */
+  }
+  .main-sky-nav {
+    gap: 0;
+  }
+  .main-nav-link, .main-nav-link-view {
+    font-size: 1.5rem;
+    text-align: center;
+    display: inline-block; /* Ensures they remain inline */
+    padding: 0.5rem 1rem; /* Adjust spacing */
+  }
+  .social-icons {
+    padding: 0;
+    gap: 0;
+  }
+  .facebook-img, .tiktok-img, .insta-img {
+    max-width: 30px;
+  }
+  .contact-button {
+    font-size: 1.2rem;
+  }
+  .sub-nav-list {
+    padding: 0;
+    line-height: 0;
+  }
+  .sub-nav-list a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+  .skyline-logo-img {
+    max-width: 85px;
+  }
+  .header-skyline-logo {
+    max-width: 8rem;
+  }
+  .main-nav-list {
+    gap: 0rem;
+    text-align: center;
+    white-space: nowrap; /* Prevents wrapping */
+  }
+  .main-sky-nav {
+    gap: 0;
+  }
+  .main-nav-link, .main-nav-link-view {
+    font-size: 1.2rem;
+    text-align: center;
+    display: inline-block; /* Ensures they remain inline */
+    padding: 0.5rem 1rem; /* Adjust spacing */
+  }
+  .social-icons {
+    padding: 0;
+    gap: 0;
+  }
+  .facebook-img, .tiktok-img, .insta-img {
+    max-width: 30px;
+  }
+  .contact-button {
+    font-size: 1.2rem;
+  }
+  .sub-nav-list {
+    padding: 0;
+    line-height: 0;
+  }
+  .sub-nav-list a {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  .skyline-logo-img {
+    max-width: 60px;
+  }
+  .header-skyline-logo {
+    max-width: 3.8rem;
+  }
+  .main-nav-list {
+    gap: 0rem;
+    text-align: center;
+    white-space: nowrap; /* Prevents wrapping */
+  }
+  .main-sky-nav {
+    gap: 0;
+  }
+  .main-nav-link, .main-nav-link-view {
+    font-size: 1rem;
+    text-align: center;
+    display: inline-block; /* Ensures they remain inline */
+    padding: 0.5rem 1rem; /* Adjust spacing */
+  }
+  .social-icons {
+    padding: 0;
+    gap: 0;
+  }
+  .facebook-img, .tiktok-img, .insta-img {
+    max-width: 30px;
+  }
+  .contact-button {
+    font-size: 1rem;
+  }
+  .sub-nav-list {
+    padding: 0;
+    line-height: 0;
+  }
+  .sub-nav-list a {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1000px) and (orientation: landscape) {
+  .sky-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .skyline-header-button  {
+    background-color: #420707;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  }
+  .main-sky-nav {
+    display: none;
+  }
+  .main-sky-nav.active {
+    display: flex;
+    gap: 0.7rem
+}
+.header-skyline-logo {
+  width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.main-sky-nav {
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  z-index: 1000;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+.skyline-logo-img {
+  max-width: 130px;
+  height: auto;
+}
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 0.2rem;
+}
+.sky-mobile-nav-icon {
+  display: block;
+}
+.main-nav-link, .main-nav-link-view {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all .3s;
+
+  border-radius: 5px;
+}
+.main-nav-list li {
+  position: relative;
+  text-align: center;
+}
+.contact-button {
+  font-size: 1.2rem;
+  margin: 1rem
+}
+.social-icons {
+  gap: 1rem;
+}
+.social-icon {
+  margin: 0 auto;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+  .sky-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .skyline-header-button  {
+    background-color: #420707;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  }
+  .main-sky-nav {
+    display: none;
+  }
+  .main-sky-nav.active {
+    display: flex;
+    gap: 0.7rem
+}
+.header-skyline-logo {
+  width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.main-sky-nav {
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  z-index: 1000;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+.skyline-logo-img {
+  max-width: 130px;
+  height: auto;
+}
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 0.2rem;
+}
+.sky-mobile-nav-icon {
+  display: block;
+}
+.main-nav-link, .main-nav-link-view {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all .3s;
+
+  border-radius: 5px;
+}
+.main-nav-list li {
+  position: relative;
+  text-align: center;
+}
+.contact-button {
+  font-size: 1.2rem;
+  margin: 1rem
+}
+.social-icon {
+  margin: 0 auto;
+}
+}
+@media screen and (max-width: 320px) and (orientation: landscape) {
+  .sky-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .skyline-header-button  {
+    background-color: #420707;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  }
+  .main-sky-nav {
+    display: none;
+  }
+  .main-sky-nav.active {
+    display: flex;
+    gap: 0.7rem
+}
+.header-skyline-logo {
+  width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.main-sky-nav {
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  z-index: 1000;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+.skyline-logo-img {
+  max-width: 100px;
+  height: auto;
+}
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 0.2rem;
+}
+.sky-mobile-nav-icon {
+  display: block;
+}
+.main-nav-link, .main-nav-link-view {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all .3s;
+
+  border-radius: 5px;
+}
+.main-nav-list li {
+  position: relative;
+  text-align: center;
+}
+.contact-button {
+  font-size: 1rem;
+  margin: 1rem
+}
+.social-icons {
+  gap: 1rem;
+}
+.social-icon {
+  margin: 0 auto;
+}
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+  .sky-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 0 10px;
+  }
+  .skyline-header-button  {
+    background-color: #420707;
+  color: #fff;
+  border: none;
+  text-align: center;
+  font-size: 1.3rem;
+  display: block;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  }
+  .main-sky-nav {
+    display: none;
+  }
+  .main-sky-nav.active {
+    display: flex;
+    gap: 0.7rem
+}
+.header-skyline-logo {
+  width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.main-sky-nav {
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #555;
+  z-index: 1000;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+.skyline-logo-img {
+  max-width: 100px;
+  height: auto;
+}
+.main-nav-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 0.2rem;
+}
+.sky-mobile-nav-icon {
+  display: block;
+}
+.main-nav-link, .main-nav-link-view {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all .3s;
+
+  border-radius: 5px;
+}
+.main-nav-list li {
+  position: relative;
+  text-align: center;
+}
+.contact-button {
+  font-size: 1rem;
+  margin: 1rem
+}
+.social-icons {
+  gap: 1rem;
+}
+.social-icon {
+  margin: 0 auto;
+}
+}
