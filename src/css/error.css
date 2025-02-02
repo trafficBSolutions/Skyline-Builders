@@ -1,0 +1,39 @@
+.NotFound {
+    font-size: 2rem;
+    font-family: "Britannic Bold";
+    text-align: center;
+}
+.skyline-error-logo-img {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.error-home-button {
+    display: flex;
+
+    justify-content: center;
+    border: 2px solid #000;
+    text-decoration: none;
+    background-color: rgb(201, 23, 23);
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    color: #fff;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+.error-home-button:hover {
+    background-color: #fc4848;
+}
+.not-found-container {
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0.5rem
+}
+.error-description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #3b3b3b;
+}
