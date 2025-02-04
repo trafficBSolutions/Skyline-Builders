@@ -1,0 +1,16 @@
+.contact-top-h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Britannic Bold";
+}
+
+@media screen and (max-width: 320px) and (orientation: landscape) {
+    .contact-top-h1 {
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+.contact-top-h1 {
+    font-size: 1.8rem;
+}
+}

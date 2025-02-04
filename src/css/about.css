@@ -1,0 +1,263 @@
+.about-main {
+    background-color: rgb(255, 165, 165);
+}
+.about-intro {
+    padding: 1rem 0.2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #c4c4c4;
+    flex: 1;
+    margin: auto;
+    align-items: center;
+}
+.about-intro h1, .social-h1{
+    font-family: "Britannic Bold";
+    font-size: 4.5rem;
+    text-align: center;
+}
+.about-services {
+    padding: 0.5rem;
+}
+.services-about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0.5rem;
+    justify-content: center;
+    gap: 20px;
+}
+.service-about-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+.service-about-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about-services h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.4rem;
+}
+.about-intro p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 2rem 5rem;
+    font-size: 1.4rem;
+}
+.estimate-btn {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    text-decoration: none;
+    background-color: rgb(201, 23, 23);
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1.8rem;
+}
+.estimate-btn:hover {
+    background-color: rgb(150, 20, 20);
+}
+.social-media-section {
+    background-color: rgb(255, 227, 222);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-icon-div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 1rem;
+}
+.social-about-icon {
+    padding: 1rem 1rem;
+}
+.social-about-icon:hover {
+    background-color: chocolate;
+}
+.facebook-about-img, .tiktok-about-img, .insta-about-img {
+    max-width: 150px;
+}
+.service-about-card {
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (min-width: 1200px) and (max-width: 1920px){
+    .about-intro h1, .social-h1 {
+        font-size: 4rem;
+    }
+    .about-intro p {
+        font-size: 1.3rem;
+        margin: 2rem 2rem;
+    }
+    .estimate-btn {
+        font-size: 1.8rem;
+    }
+    .about-services h2 {
+        font-size: 4rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 100px;
+    }
+}
+@media screen and (max-width: 1200px) and (orientation: landscape) {
+    .about-intro h1, .social-h1 {
+        font-size: 2.7rem;
+    }
+    .about-intro p {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    .estimate-btn {
+        font-size: 1.7rem;
+    }
+    .about-services h2 {
+        font-size: 2rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 70px;
+    }
+}
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+    .about-intro h1, .social-h1 {
+        font-size: 2.7rem;
+    }
+    .about-intro p {
+        font-size: 1rem;
+        margin: 1rem 2rem;
+    }
+    .estimate-btn {
+        font-size: 1.7rem;
+    }
+    .about-services h2 {
+        font-size: 2rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 70px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
+    .about-intro h1, .social-h1 {
+        font-size: 2.5rem;
+    }
+    .about-intro p {
+        font-size: 0.8rem;
+        margin: 1rem 2rem;
+    }
+    .estimate-btn {
+        font-size: 1.4rem;
+    }
+    .about-services h2 {
+        font-size: 2rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 70px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+    .about-intro h1, .social-h1 {
+        font-size: 2.5rem;
+    }
+    .about-intro p {
+        font-size: 0.8rem;
+        margin: auto;
+        text-align: center;
+    }
+    .estimate-btn {
+        font-size: 1.2rem;
+    }
+    .about-services h2 {
+        font-size: 2rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 70px;
+    }
+}
+@media screen and (max-width: 320px) and (orientation: landscape) {
+    .about-intro h1, .social-h1 {
+        font-size: 1.7rem;
+    }
+    .about-intro p {
+        font-size: 0.7rem;
+        margin: auto;
+        text-align: center;
+    }
+    .estimate-btn {
+        font-size: 1rem;
+    }
+    .about-services h2 {
+        font-size: 2rem;
+    }
+    .about-services {
+        padding: 20px 10px;
+    }
+    .social-icon-div {
+        gap: 0px;
+    }
+    .facebook-about-img, .tiktok-about-img, .insta-about-img {
+        max-width: 60px;
+    }
+    }
+@media screen and (max-width: 320px) and (orientation: portrait) {
+.about-intro h1, .social-h1 {
+    font-size: 2rem;
+}
+.about-intro p {
+    font-size: 0.7rem;
+    margin: auto;
+    text-align: center;
+}
+.estimate-btn {
+    font-size: 1rem;
+}
+.about-services h2 {
+    font-size: 2rem;
+}
+.about-services {
+    padding: 20px 10px;
+}
+.social-icon-div {
+    gap: 0px;
+}
+.facebook-about-img, .tiktok-about-img, .insta-about-img {
+    max-width: 50px;
+}
+}
