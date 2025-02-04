@@ -189,7 +189,6 @@ const Estimate = () => {
             console.error('Error submitting estimate:', error);
         }
     };
-    
     return (
         <div>
             <Header/>
