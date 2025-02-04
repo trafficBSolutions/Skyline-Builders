@@ -60,6 +60,7 @@ a {
   object-fit: cover;
   z-index: -1;
 }
+/* background: linear-gradient(90deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.94) 21%, rgba(35, 35, 35, 0.9) 37%, rgba(124, 124, 124, 0) 100%); */
 .skyline-main::before {
   content: "";
   position: absolute;
@@ -67,7 +68,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgb(12, 12, 12) 0%, rgba(12, 12, 12, 0.94) 21%, rgba(35, 35, 35, 0.9) 37%, rgba(124, 124, 124, 0) 100%);
+  
   z-index: 1;
 }
 .skyline-description {
@@ -323,7 +324,7 @@ a {
 .process-step h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px) and (orientation: landscape) {
+@media screen and (min-width: 1200px) and (max-width: 1920px){
   .skyline-main-h1 {
     font-size: 2.7rem;
   }
