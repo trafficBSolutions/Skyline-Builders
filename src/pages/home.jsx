@@ -20,7 +20,7 @@ const Home = () => {
             Expert excavation, pipe lining, foundations, framing, and 
             roofing—building the State of Georgia from the ground up.
             </p>
-            <a href="/services" className="home-services">About Us</a>
+            <a href="/about-us" className="home-services">About Us</a>
             </div>
             </div>
             <section className="sky-photo-gallery">
@@ -55,7 +55,7 @@ const Home = () => {
     </div>
     <div className="service-card">
       <h2>Pipe Lining</h2>
-      <img src={images["../assets/Skyline Photos/pipe lining.jpg"].default} alt="Pipe Lining" />
+      <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Pipe Lining" />
       <p>Efficient underground pipe lining solutions for durability.</p>
     </div>
     <div className="service-card">
