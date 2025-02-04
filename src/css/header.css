@@ -136,7 +136,7 @@
 .sub-nav-list li {
   margin: .5rem 0;
 }
-@media screen and (min-width: 1200px) and (max-width: 1920px) and (orientation: landscape) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
   .skyline-logo-img {
     max-width: 100px;
   }
