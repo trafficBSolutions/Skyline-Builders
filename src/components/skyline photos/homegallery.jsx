@@ -18,20 +18,80 @@ const photos = [
         height: 3024
     },
     {
+        src: images['../assets/Skyline Photos/skyline 17.jpg']?.default || '',
+        width: 4032,
+        height: 3024
+    },
+    {
         src: images['../assets/Skyline Photos/skyline 4.jpg']?.default || '',
         width: 4032,
         height: 3024
     },
     {
-        src: images['../assets/Skyline Photos/skyline 5.jpg']?.default || '',
-        width: 4032,
-        height: 3024
-    },
+      src: images['../assets/Skyline Photos/skyline 5.jpg']?.default || '',
+      width: 4032,
+      height: 3024
+  },
     {
         src: images['../assets/Skyline Photos/skyline 6.jpg']?.default || '',
         width: 4032,
         height: 3024
-    }
+    },
+    {
+      src: images['../assets/Skyline Photos/skyline 7.jpg']?.default || '',
+      width: 4032,
+      height: 3024
+  },
+  {
+    src: images['../assets/Skyline Photos/skyline 8.jpg']?.default || '',
+    width: 4032,
+    height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 9.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 10.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 11.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 12.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 13.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 14.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 15.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 16.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+},
+{
+  src: images['../assets/Skyline Photos/skyline 18.jpg']?.default || '',
+  width: 4032,
+  height: 3024
+}
 ]
 const HomePhotoGallery = () => {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
