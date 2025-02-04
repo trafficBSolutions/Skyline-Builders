@@ -2,7 +2,7 @@
     background-color: #ffeaea;
 }
 .estimate-form {
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     padding: 20px;
     background: #ffffff;
@@ -76,6 +76,11 @@
 .submit-estimate:hover {
     background-color: rgb(150, 20, 20);
 }
+.submission-message {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(39, 201, 39);
+}
 .submission-error-message {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -132,11 +137,75 @@
     grid-column: span 2;
     justify-self: center; /* Center it horizontally */
 }
-@media (max-width: 600px) {
+@media screen and (min-width: 1200px) and (max-width: 1920px) {
+    .choose-estimate-logo {
+        max-width: 150px;
+    }
+    .job-card img {
+        max-height: 200px;
+    }
+    .submission-error-message {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 1200px) and (orientation: landscape) {
     .estimate-form {
-        width: 90%;
+        max-width: 750px;
+    }
+    .submission-error-message {
+        font-size: 0.8rem;
+    }
+    .choose-estimate-logo {
+        max-width: 150px;
+    }
+}
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+    .estimate-form {
+        max-width: 700px;
+    }
+    .job-card img {
+        max-height: 200px;
+    }
+    .submission-error-message {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 640px) and (orientation: portrait) {
+    .submission-error-message {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 320px) and (orientation: landscape) {
+    .estimate-top-h1 {
+        font-size: 2rem;
+    }
+    .estimate-form h1 {
+        font-size: 1.1rem;
+    }
+    .choose-estimate-logo {
+        max-width: 90px;
     }
     .job-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        display: block;
+    }
+    .submission-error-message {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 320px) and (orientation: portrait) {
+    .estimate-top-h1 {
+        font-size: 2rem;
+    }
+    .estimate-form h1 {
+        font-size: 1.1rem;
+    }
+    .choose-estimate-logo {
+        max-width: 90px;
+    }
+    .job-grid {
+        display: block;
+    }
+    .submission-error-message {
+        font-size: 0.8rem;
     }
 }
