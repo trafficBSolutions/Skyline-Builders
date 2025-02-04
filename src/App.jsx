@@ -1,6 +1,8 @@
 import { Routes, Route} from 'react-router-dom'
-import {Home, Error, Estimate} from './pages'
-
+import {Home, Error, Estimate, Contact, About} from './pages'
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.withCredentials = true
 function App() {
   return (
     <>
@@ -8,6 +10,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="*" element={<Error/>}/>
         <Route path='/estimate' element={<Estimate/>}/>
+        <Route path='/contact-us' element={<Contact/>}/>
+        <Route path='/about-us' element={<About/>}/>
       </Routes>
     </>
   )
