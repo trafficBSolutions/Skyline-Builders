@@ -1,4 +1,6 @@
 import Home from './home'
 import Error from './error'
 import Estimate from './estimate'
-export {Home, Error, Estimate}
+import Contact from './contact-us'
+import About from './about-us'
+export {Home, Error, Estimate, Contact, About}
