@@ -237,7 +237,7 @@
   }
   .social-icons {
     padding: 0;
-    gap: 0;
+    gap: 1rem;
   }
   .facebook-img, .tiktok-img, .insta-img {
     max-width: 30px;
