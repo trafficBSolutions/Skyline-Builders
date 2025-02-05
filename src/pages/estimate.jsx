@@ -323,7 +323,7 @@ const Estimate = () => {
     </div>
     <div className="job-card">
       <h2>Pipe Lining</h2>
-      <img src={images["../assets/Skyline Photos/pipe lining.jpg"].default} alt="Pipe Lining" />
+      <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Pipe Lining" />
     </div>
     <div className="job-card">
       <h2>Foundations</h2>
