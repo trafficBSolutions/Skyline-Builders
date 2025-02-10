@@ -380,7 +380,7 @@ const Estimate = () => {
                     <h2 className="footer-office-h2">Home Office</h2>
                     <div className="address-office">
                         <p className="address-p">
-                        306 HILLSIDE DR SW
+                        763 HWY 53
                         CALHOUN, GA 30701  
                         </p>
                     </div>
