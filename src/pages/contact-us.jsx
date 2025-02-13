@@ -226,7 +226,7 @@ const Contact = () => {
                         <h2 className="footer-location-h2">Connect</h2>
                         <div className="footer-connect">
                         <a href="tel:+17068445753" className="footer-p"><b className="footer-b">Phone:</b> (706) 844-5753</a>
-                    <a href="mailto: skylinebuilders101@outlook.com" className="footer-email"><b  className="footer-b">Email:</b>skylinebuilders101@outlook.com</a>
+                    <a href="mailto: skylinebuilders101@outlook.com" className="footer-email"><b  className="footer-b">Email:</b> skylinebuilders101@outlook.com</a>
                     </div>
                     </div>
                     </div>
