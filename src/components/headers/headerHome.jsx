@@ -28,7 +28,7 @@ function Header() {
       <a className="social-icon" href="https://www.tiktok.com/@tbsmaterialworx?_t=8lf08Hc9T35&_r=1" target="_blank" rel="noopener noreferrer">
         <img className="tiktok-img" src={images["../assets/social media/LinkedIn.png"].default} alt="TikTok" />
       </a>
-      <a className="social-icon" href="https://www.instagram.com/tbsmaterialworx?igsh=YzV4b3doaTExcjN4&utm_source=qr" target="_blank" rel="noopener noreferrer">
+      <a className="social-icon" href="https://www.instagram.com/skylinebuilders101/" target="_blank" rel="noopener noreferrer">
         <img className="insta-img" src={images["../assets/social media/instagram.png"].default} alt="Instagram" />
       </a>
     </div>
