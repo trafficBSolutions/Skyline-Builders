@@ -32,7 +32,6 @@ function Header() {
         <img className="insta-img" src={images["../assets/social media/instagram.png"].default} alt="Instagram" />
       </a>
     </div>
-                    <a href="tel:+17068445753"className="contact-button">Call Skyline Builders</a>
                 </ul>
             </nav>
         </header>
