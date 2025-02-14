@@ -55,7 +55,7 @@ const About = () => {
                         </h1>
                     </div>
                     <div className="social-icon-div">
-      <a className="social-about-icon" href="https://www.facebook.com/tbssigns2022/" target="_blank" rel="noopener noreferrer">
+      <a className="social-about-icon" href="https://www.facebook.com/profile.php?id=61573143419482" target="_blank" rel="noopener noreferrer">
         <img className="facebook-about-img" src={images["../assets/social media/facebook.png"].default} alt="Facebook" />
       </a>
       <a className="social-about-icon" href="https://www.tiktok.com/@tbsmaterialworx?_t=8lf08Hc9T35&_r=1" target="_blank" rel="noopener noreferrer">
