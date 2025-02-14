@@ -61,7 +61,7 @@ const About = () => {
       <a className="social-about-icon" href="https://www.linkedin.com/company/skyline-builder-llc/about" target="_blank" rel="noopener noreferrer">
         <img className="tiktok-about-img" src={images["../assets/social media/LinkedIn.png"].default} alt="TikTok" />
       </a>
-      <a className="social-about-icon" href="https://www.instagram.com/tbsmaterialworx?igsh=YzV4b3doaTExcjN4&utm_source=qr" target="_blank" rel="noopener noreferrer">
+      <a className="social-about-icon" href="https://www.instagram.com/skylinebuilders101" target="_blank" rel="noopener noreferrer">
         <img className="insta-about-img" src={images["../assets/social media/instagram.png"].default} alt="Instagram" />
       </a>
                     </div>
