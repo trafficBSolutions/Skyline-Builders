@@ -15,7 +15,7 @@ const Home = () => {
                     <source src={images["../assets/Skyline Photos/skyline.mp4"].default} type="video/mp4"></source>
                 </video>
                 <div className="skyline-description">
-            <h1 className="skyline-main-h1">SKYLINE BUILDERS, LLC</h1>
+            <h1 className="skyline-main-h1">SKYLINE BUILDERS & TRUCKING, LLC</h1>
             <p className="skyline-statement">
             Expert excavation, pipe lining, foundations, framing, and 
             roofing—building the State of Georgia from the ground up.
@@ -34,7 +34,7 @@ const Home = () => {
                 
   <h1>Why Choose Us?</h1>
   <img className="choose-logo"src={images["../assets/logos/Skyline Builders Regular Black Background.svg"].default}/>
-  <p className="skyline-builders-description">At Skyline Builders, LLC, we specialize in excavation, foundations, framing, 
+  <p className="skyline-builders-description">At Skyline Builders & Trucking, LLC, we specialize in excavation, foundations, framing, 
     and roofing—building Georgia from the ground up with quality craftsmanship and trusted expertise.</p>
 
   <ul>
@@ -140,7 +140,7 @@ const Home = () => {
 
             </footer>
             <div className="footer-copyright">
-      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders, LLC - 
+      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders & Trucking, LLC - 
         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.facebook.com/will.rowell.779" target="_blank" rel="noopener noreferrer">William Rowell</a> - All Rights Reserved.</p>
     </div>
         </div>
