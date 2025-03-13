@@ -106,7 +106,7 @@ const Contact = () => {
                 <main className="contact-main">
                 <div className="estimate-div">
                 <h1 className="contact-top-h1">
-                    Contact Skyline Builders, LLC
+                    Contact Skyline Builders & Trucking, LLC
                 </h1>
                 <form className="estimate-form" onSubmit={handleSubmit}>
                 <h1 className="estimate-form-h1">Please Fill Out the Form Below to Submit Your Message.</h1>
@@ -233,7 +233,7 @@ const Contact = () => {
 
             </footer>
             <div className="footer-copyright">
-      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders, LLC - 
+      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders & Trucking, LLC - 
         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.facebook.com/will.rowell.779" target="_blank" rel="noopener noreferrer">William Rowell</a> - All Rights Reserved.</p>
     </div>
             </div>
