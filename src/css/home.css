@@ -423,7 +423,7 @@ a {
   font-size: 1rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 2rem;
 }
 .service-card h2 {
@@ -455,6 +455,36 @@ a {
 }
 .service-process {
   flex-wrap: nowrap;
+}
+.selling-items {
+  grid-template-columns: repeat(2, 1fr); /* Keeps 2 columns */
+  max-width: 90%; /* Adjust width for better layout */
+  margin: 0 auto; /* Centers the grid */
+}
+
+.selling-card {
+  max-width: 600px; /* Increase card width */
+  width: 100%; /* Ensure it adapts to screen size */
+  padding: 25px; /* Slightly increase padding */
+}
+
+.selling-card img {
+  width: 100%; /* Makes image fill the card */
+  height: 100px; /* Increase height for larger images */
+  object-fit: cover; /* Prevent distortion */
+  border-radius: 8px;
+}
+
+.selling-content h2 {
+  font-size: 1.5rem; /* Slightly increase heading */
+}
+
+.selling-card h2 {
+  font-size: 1.3rem; /* Larger text */
+}
+
+.selling-card p {
+  font-size: 1rem; /* More readable paragraph text */
 }
 }
 @media screen and (max-width: 1200px) and (orientation: landscape) {
@@ -492,7 +522,7 @@ a {
   font-size: 1rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 2rem;
 }
 .service-card h2 {
@@ -525,12 +555,37 @@ a {
 .service-process {
   flex-wrap: nowrap;
 }
-.service-card {
-  padding: 10px 5px;
+.selling-items {
+  grid-template-columns: repeat(2, 1fr); /* Keeps 2 columns */
+  max-width: 90%; /* Adjust width for better layout */
+  margin: 0 auto; /* Centers the grid */
 }
-.service-card img {
-  height: 100px;
+
+.selling-card {
+  max-width: 600px; /* Increase card width */
+  width: 100%; /* Ensure it adapts to screen size */
+  padding: 25px; /* Slightly increase padding */
 }
+
+.selling-card img {
+  width: 100%; /* Makes image fill the card */
+  height: 100px; /* Increase height for larger images */
+  object-fit: cover; /* Prevent distortion */
+  border-radius: 8px;
+}
+
+.selling-content h2 {
+  font-size: 1.5rem; /* Slightly increase heading */
+}
+
+.selling-card h2 {
+  font-size: 1.3rem; /* Larger text */
+}
+
+.selling-card p {
+  font-size: 1rem; /* More readable paragraph text */
+}
+
 }
 @media screen and (max-width: 1200px) and (orientation: portrait) {
   .skyline-main-h1 {
@@ -567,7 +622,7 @@ a {
   font-size: 1.2rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 2rem;
 }
 .service-card h2 {
@@ -607,6 +662,27 @@ a {
 .service-card img {
   height: 100px;
 }
+.selling-items {
+  display: block;
+}
+.blue-rocks, .slag-stones, .dirt-types, .paving-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.selling-card img {
+  width: 50%;
+  height: 200px;
+}
+.selling-content h2 {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+.selling-card p {
+  font-size: 1rem;
+}
 }
 @media screen and (min-width: 320px) and (max-width: 768px) and (orientation: landscape) {
   .skyline-main-h1 {
@@ -645,7 +721,7 @@ a {
   font-size: 0.8rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 1.5rem;
 }
 .service-card h2 {
@@ -739,7 +815,7 @@ a {
   font-size: 0.8rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 1.5rem;
 }
 .service-card h2 {
@@ -777,6 +853,25 @@ a {
 }
 .services-grid, .service-process {
   flex-wrap: wrap;
+}
+.selling-items {
+  display: block;
+}
+.blue-rocks, .slag-stones, .dirt-types, .paving-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selling-card img {
+  width: 100%;
+  height: auto;
+}
+.selling-content h2 {
+  font-size: 1.3rem;
+  margin: 20px 0;
+}
+.selling-card p {
+  font-size: 1rem;
 }
 }
 @media screen and (max-width: 320px) and (orientation:landscape) {
@@ -826,7 +921,7 @@ a {
   font-size: 0.6rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 1.5rem;
 }
 .service-card h2 {
@@ -864,6 +959,25 @@ a {
 }
 .services-grid, .service-process {
   flex-wrap: wrap;
+}
+.selling-items {
+  display: block;
+}
+.blue-rocks, .slag-stones, .dirt-types, .paving-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selling-card img {
+  width: 100%;
+  height: auto;
+}
+.selling-content h2 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.selling-card p {
+  font-size: 0.8rem;
 }
 }
 @media screen and (max-width: 320px) and (orientation: portrait) {
@@ -913,7 +1027,7 @@ a {
   font-size: 0.6rem;
   padding: 7px 0;
 }
-.service-title, .estimate-h1 {
+.service-title, .estimate-h1, .selling-h1 {
   font-size: 1.5rem;
 }
 .service-card h2 {
@@ -951,5 +1065,24 @@ a {
 }
 .services-grid, .service-process {
   flex-wrap: wrap;
+}
+.selling-items {
+  display: block;
+}
+.blue-rocks, .slag-stones, .dirt-types, .paving-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.selling-card img {
+  width: 100%;
+  height: auto;
+}
+.selling-content h2 {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.selling-card p {
+  font-size: 0.8rem;
 }
 }
