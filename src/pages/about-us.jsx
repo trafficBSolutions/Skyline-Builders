@@ -10,7 +10,7 @@ const About = () => {
             <Header/>
             <main className="about-main">
                 <section className="about-intro">
-                    <h1>About Skyline Builders, LLC</h1>
+                    <h1>About Skyline Builders & Trucking, LLC</h1>
                     <p>
                     Skyline Builders, LLC is committed to delivering exceptional construction services 
                         throughout Georgia. From site preparation to the finishing touches, we specialize 
@@ -113,7 +113,7 @@ const About = () => {
 
             </footer>
             <div className="footer-copyright">
-      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders, LLC - 
+      <p className="footer-copy-p">&copy; 2025 Traffic & Barrier Solutions, LLC/Skyline Builders & Trucking, LLC - 
         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.facebook.com/will.rowell.779" target="_blank" rel="noopener noreferrer">William Rowell</a> - All Rights Reserved.</p>
     </div>
         </div>
