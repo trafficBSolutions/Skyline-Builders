@@ -75,6 +75,74 @@ const Home = () => {
     </div>
   </div>
 </section>
+<section className="selling-section">
+  <div className="selling-content">
+    <h1 className="selling-h1">What We Sell and Deliver</h1>
+    <div className="selling-items">
+    <h2>Blue Rocks:</h2>
+      <div className="blue-rocks">
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/blue-rock.jpg"].default} alt="Stone No. 57" />
+        <h2>Stone No. 57</h2>
+        <p>Versatile gravel ideal for driveways, drainage, and road bases.</p>
+      </div>
+
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/Rip-Rap.jpg"].default} alt="Rip Rap Stone" />
+        <h2>Rip Rap Stone</h2>
+        <p>Durable stone used for erosion control and retaining walls.</p>
+      </div>
+
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/crush-run.jpg"].default} alt="GAB Crush N Run" />
+        <h2>GAB Crush N Run</h2>
+        <p>Perfect for compacted gravel driveways and road foundations.</p>
+      </div>
+</div>
+<h2>Slag Stones:</h2>
+<div className="slag-stones">
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/slag-stone.jpg"].default} alt="Slag Stone" />
+        <h2>#3 Stone Slag</h2>
+        <p>Available in small, medium, and large sizes for various applications.</p>
+      </div>
+      </div>
+      <h2>Dirt Types:</h2>
+      <div className="dirt-types">
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/fill-dirt.jpg"].default} alt="Fill Dirt" />
+        <h2>Fill Dirt</h2>
+        <p>Great for leveling and filling low areas on job sites.</p>
+      </div>
+
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/top-soil.jpg"].default} alt="Top Soil" />
+        <h2>Top Soil</h2>
+        <p>Rich soil ideal for landscaping and gardening projects.</p>
+      </div>
+
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/clay.jpg"].default} alt="Clay" />
+        <h2>Clay</h2>
+        <p>Perfect for compaction, waterproofing, and construction projects.</p>
+      </div>
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/sand.jpg"].default} alt="Sand" />
+        <h2>Sand</h2>
+        <p>Used in concrete, masonry, and various construction applications.</p>
+      </div>
+</div>
+<h2>Paving Materials:</h2>
+<div className="paving-materials">
+      <div className="selling-card">
+        <img src={images["../assets/Skyline Photos/asphalt.jpg"].default} alt="Paving Materials" />
+        <h2>Paving Materials</h2>
+        <p>Mullins, asphalt, binder, and Superpave available for roadwork and paving projects.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 <section className="estimate-section">
     <h1 className="estimate-h1">Book A Free Consulation With Us</h1>
   <div className="service-description">
