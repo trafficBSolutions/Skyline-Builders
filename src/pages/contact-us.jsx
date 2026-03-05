@@ -106,7 +106,7 @@ const Contact = () => {
                 <main className="contact-main">
                 <div className="estimate-div">
                 <h1 className="contact-top-h1">
-                    Contact Skyline Builders & Trucking, LLC
+                    Contact Skyline Builders, LLC
                 </h1>
                 <form className="estimate-form" onSubmit={handleSubmit}>
                 <h1 className="estimate-form-h1">Please Fill Out the Form Below to Submit Your Message.</h1>
@@ -196,7 +196,7 @@ const Contact = () => {
                     <h2 className="footer-office-h2">Home Office</h2>
                     <div className="address-office">
                         <p className="address-p">
-                        763 HWY 53
+                        306 HILLSIDE DR SW
                         CALHOUN, GA 30701  
                         </p>
                     </div>
@@ -226,15 +226,15 @@ const Contact = () => {
                         <h2 className="footer-location-h2">Connect</h2>
                         <div className="footer-connect">
                         <a href="tel:+17068445753" className="footer-p"><b className="footer-b">Phone:</b> (706) 844-5753</a>
-                    <a href="mailto: skylinebuilders101@outlook.com" className="footer-email"><b  className="footer-b">Email:</b> skylinebuilders101@outlook.com</a>
+                    <a href="mailto: patelterry75@gmail.com" className="footer-address"><b  className="footer-b">Email:</b> patelterry75@gmail.com</a>
                     </div>
                     </div>
                     </div>
 
             </footer>
             <div className="footer-copyright">
-      <p className="footer-copy-p">&copy; 2026 Traffic & Barrier Solutions, LLC/Skyline Builders & Trucking, LLC - 
-        Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.facebook.com/will.rowell.779" target="_blank" rel="noopener noreferrer">William Rowell</a> - All Rights Reserved.</p>
+      <p className="footer-copy-p">&copy; 2026 Skyline Builders & Trucking, LLC - 
+         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.trafficbarriersolutions.com" target="_blank" rel="noopener noreferrer">Traffic & Barrier Solutions, LLC</a> - All Rights Reserved.</p>
     </div>
             </div>
         )
