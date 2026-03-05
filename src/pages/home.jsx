@@ -17,7 +17,7 @@ const Home = () => {
                 <div className="skyline-description">
             <h1 className="skyline-main-h1">SKYLINE BUILDERS & TRUCKING, LLC</h1>
             <p className="skyline-statement">
-            Expert excavation, pipe lining, foundations, framing, and 
+            Expert excavation, infrastructure, foundations, framing, and 
             roofing—building the State of Georgia from the ground up.
             </p>
             <a href="/about-us" className="home-services">About Us</a>
@@ -54,9 +54,9 @@ const Home = () => {
       <p>We dig and prepare the land for strong foundations.</p>
     </div>
     <div className="service-card">
-      <h2>Pipe Lining</h2>
-      <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Pipe Lining" />
-      <p>Efficient underground pipe lining solutions for durability.</p>
+      <h2>Infrastructure</h2>
+      <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Infrastructure" />
+      <p>Efficient underground infrastructure solutions for durability.</p>
     </div>
     <div className="service-card">
       <h2>Foundations</h2>
