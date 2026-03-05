@@ -59,7 +59,7 @@ const states = [
   ];
 const jobType = [
     {name: 'Excavation'},
-    {name: 'Pipe Lining'},
+    {name: 'Infrastructure'},
     {name: 'Foundations'},
     {name: 'Framing'},
     {name: 'Roofing'}
@@ -322,8 +322,8 @@ const Estimate = () => {
       <img src={images["../assets/Skyline Photos/excavator.jpg"].default} alt="Excavation Work" />
     </div>
     <div className="job-card">
-      <h2>Pipe Lining</h2>
-      <img src={images["../assets/Skyline Photos/pipe lining.jpg"].default} alt="Pipe Lining" />
+      <h2>Infrastructure</h2>
+      <img src={images["../assets/Skyline Photos/pipe lining.jpg"].default} alt="Infrastructure" />
     </div>
     <div className="job-card">
       <h2>Foundations</h2>
