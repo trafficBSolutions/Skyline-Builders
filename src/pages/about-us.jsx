@@ -31,8 +31,8 @@ const About = () => {
                             <h3>Excavation</h3>
                         </div>
                         <div className="service-about-card">
-                            <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Pipe Lining" />
-                            <h3>Pipe Lining</h3>
+                            <img src={images["../assets/Skyline Photos/skyline 10.jpg"].default} alt="Infrastructure" />
+                            <h3>Infrastructure</h3>
                         </div>
                         <div className="service-about-card">
                             <img src={images["../assets/Skyline Photos/foundations.jpg"].default} alt="Foundations" />
@@ -114,7 +114,7 @@ const About = () => {
             </footer>
             <div className="footer-copyright">
       <p className="footer-copy-p">&copy; 2026 Skyline Builders & Trucking, LLC - 
-         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.trafficbarriersolutions.com" target="_blank" rel="noopener noreferrer">Traffic & Barrier Solutions, LLC</a> - All Rights Reserved.</p>
+         Website Created by <a className="footer-face"href="https://www.material-worx.com/portfolio" target="_blank" rel="noopener noreferrer">MX Systems</a> - All Rights Reserved.</p>
     </div>
         </div>
     )
