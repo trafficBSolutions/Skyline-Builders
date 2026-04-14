@@ -209,7 +209,7 @@ const Home = () => {
             </footer>
             <div className="footer-copyright">
       <p className="footer-copy-p">&copy; 2026 Skyline Builders & Trucking, LLC - 
-         Website MERN Stack Coded & Deployed by <a className="footer-face"href="https://www.trafficbarriersolutions.com" target="_blank" rel="noopener noreferrer">Traffic & Barrier Solutions, LLC</a> - All Rights Reserved.</p>
+         Website Created by <a className="footer-face"href="https://www.material-worx.com/portfolio" target="_blank" rel="noopener noreferrer">MX Systems</a> - All Rights Reserved.</p>
     </div>
         </div>
     )
